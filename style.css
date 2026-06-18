@@ -1,0 +1,221 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f8f9fa;
+}
+
+.top-bar{
+background:#1e3a5f;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+background:white;
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+
+nav a{
+text-decoration:none;
+color:#1e3a5f;
+font-weight:bold;
+}
+
+.hero{
+height:450px;
+background:url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da')
+center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.search-box{
+background:white;
+padding:40px;
+width:70%;
+text-align:center;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.search-box h1{
+margin-bottom:20px;
+}
+
+.search-area{
+display:flex;
+gap:10px;
+}
+
+.search-area input{
+flex:1;
+padding:12px;
+}
+
+.search-area button{
+padding:12px 30px;
+background:#f4a261;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.quick-links{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+padding:50px;
+}
+
+.card{
+background:white;
+text-align:center;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card i{
+font-size:40px;
+margin-bottom:15px;
+color:#1e3a5f;
+}
+
+.content{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+padding:50px;
+}
+
+.news-card{
+background:white;
+padding:20px;
+margin-top:20px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.event{
+background:white;
+padding:15px;
+margin-top:15px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.event span{
+display:block;
+font-weight:bold;
+color:#f4a261;
+}
+
+.stats{
+background:#1e3a5f;
+color:white;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+text-align:center;
+padding:50px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.collection-banner{
+background:#1e3a5f;
+color:white;
+text-align:center;
+padding:80px;
+}
+
+.search-filter{
+display:flex;
+justify-content:center;
+gap:15px;
+padding:30px;
+}
+
+.search-filter input,
+.search-filter select{
+padding:10px;
+}
+
+.search-filter button{
+background:#f4a261;
+border:none;
+padding:10px 20px;
+color:white;
+}
+
+.books{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.book-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+@media(max-width:768px){
+
+.content{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+.search-area{
+flex-direction:column;
+}
+
+.search-filter{
+flex-direction:column;
+}
+
+}
+.top-bar{
+    background:#1e3a5f;
+    padding:15px 0;
+}
+
+.logo-container{
+    display:flex;
+    flex-direction:column; /* logo di atas teks */
+    align-items:center;
+    justify-content:center;
+}
+
+.logo-container img{
+    width: 150px;px;      /* besarkan sedikit */
+    height: 150px;px;
+    border-radius:50%; /* jadikan bulat */
+    object-fit:cover;
+    margin-bottom:8px;
+}
+
+.logo-container h2{
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    margin:0;
+}
